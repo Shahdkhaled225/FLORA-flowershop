@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLORA | Shop </title>
+ 
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+</head>
+<body>
+
+
+<header>
+    <!--navbar shop-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: sticky; top: 0; z-index: 9999 !important;">
+        <!--brand icon and name-->
+         <a class="navbar-brand d-flex align-items-center" href="#">
+            <div class="brand-icon" style="background-color: rgb(241, 149, 149)">
+             <svg viewBox="0 0 24 24">
+                <path d="M12 2c-1.5 2-3.5 3-5 3 0 4 2 7 5 8 3-1 5-4 5-8-1.5 0-3.5-1-5-3zM7 14c2 3 5 4 5 8 0-4 3-5 5-8-3 2-7 2-10 0z"/>
+             </svg>
+            </div>
+             <span style="color:#1e1e1e">FLORA</span>
+        </a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="occasionDropdown"
+                   role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Occasions
+                </a>
+                <div class="dropdown-menu" aria-labelledby="occasionDropdown">
+                    <a class="dropdown-item" href="occasion-birthday.html">Birthday</a>
+                    <a class="dropdown-item" href="occasion-anniversary.html">Anniversary</a>
+                    <a class="dropdown-item" href="occasion-get-well-soon.html">Get Well Soon</a>
+                    <a class="dropdown-item" href="occasion-congrats.html">Congratulations</a>
+                    <a class="dropdown-item" href="occasion-wedding.html">Wedding</a>
+                    <a class="dropdown-item" href="occasion-thank-you.html">Thank You</a>
+                    <a class="dropdown-item" href="occasion-iam-sorry.html">I am Sorry</a>
+                </div>
+            </li>
+
+            <!-- Cart -->
+            <li class="nav-item">
+              <a class="nav-link position-relative" href="cart.html">
+                <i class="bi bi-cart3"></i>
+                Cart
+                <span class="badge badge-danger position-absolute"
+                    style="top:-5px; right:-5px; font-size: 0.7rem;">0</span>
+              </a>
+            </li>
+
+
+             <!-- Login -->
+            <li class="nav-item ml-lg-3">
+              <a class="btn btn-login" href="login.html">
+                Log in
+              </a>
+            </li>
+            </ul>
+     
+        </div>
+    </nav>
+</header>
+
+<main>
+  <!-- Shop Section -->
+  <section id="shop" class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-4">Shop Our Flowers</h1>
+            <div class="row" id="product-list">
+               
+               
+               <!--customize boquet-->
+
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="images/customize flowers.jpg" class="card-img-top" alt="Customize Your Bouquet">
+                        <div class="card-body">
+                            <h5 class="card-title">Make your own Bouquet</h5>
+                            <p class="card-text">Starting at 50 LE</p>
+                            <a href="#" class="btn btn-primary-custom">Customize Now</a>
+                        </div>
+                    </div>
+                </div>
+               
+               
+               
+                <!-- Product 1 -->
+                <div class="col-md-3 mb-4">
+                  <div class="card">
+                    <img src="images/red roses.jpg" class="card-img-top" alt="Red rose bouquet">
+                    <div class="card-body">
+                      <h5 class="card-title">Red Rose Bouquet</h5>
+                      <p class="card-text">400 LE</p>
+                      <button class="btn btn-primary-custom"
+                        onclick="addToCart('Red Rose Bouquet',400,'images/red roses.jpg')">
+                        Add to Cart
+                      </button>
+                      <button class="btn btn-outline-secondary btn-sm mt-2"
+                        onclick="viewDetails('Red Rose Bouquet',400,'images/red roses.jpg','Classic red roses expressing love and romance')">
+                        View Details
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                
+
+            <!-- Product 2 -->
+               <div class="col-md-3 mb-4">
+                 <div class="card">
+                   <img src="images/mixedroses.jpg" class="card-img-top" alt="Mixed roses bouquet">
+                   <div class="card-body">
+                     <h5 class="card-title">Mixed Roses Bouquet</h5>
+                     <p class="card-text">350 LE</p>
+                     <button class="btn btn-primary-custom"
+                       onclick="addToCart('Mixed Roses Bouquet',350,'images/mixedroses.jpg')">
+                       Add to Cart
+                     </button>
+                     <button class="btn btn-outline-secondary btn-sm mt-2"
+                       onclick="viewDetails('Mixed Roses Bouquet',350,'images/mixedroses.jpg','Colorful mix of fresh roses')">
+                       View Details
+                     </button>
+                   </div>
+                 </div>
+               </div>
+
+<!-- Product 3 -->
+<div class="col-md-3 mb-4">
+  <div class="card">
+    <img src="images/sunflower.jpg" class="card-img-top" alt="Sunflower bouquet">
+    <div class="card-body">
+      <h5 class="card-title">Sunflower Bouquet</h5>
+      <p class="card-text">300 LE</p>
+      <button class="btn btn-primary-custom"
+        onclick="addToCart('Sunflower Bouquet',300,'images/sunflower.jpg')">
+        Add to Cart
+      </button>
+      <button class="btn btn-outline-secondary btn-sm mt-2"
+        onclick="viewDetails('Sunflower Bouquet',300,'images/sunflower.jpg','Bright sunflowers full of joy')">
+        View Details
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 4 -->
+<div class="col-md-3 mb-4">
+  <div class="card">
+    <img src="images/tulip.jpg" class="card-img-top" alt="Tulips bouquet">
+    <div class="card-body">
+      <h5 class="card-title">Tulips Bouquet</h5>
+      <p class="card-text">300 LE</p>
+      <button class="btn btn-primary-custom"
+        onclick="addToCart('Tulips Bouquet',300,'images/tulip.jpg')">
+        Add to Cart
+      </button>
+      <button class="btn btn-outline-secondary btn-sm mt-2"
+        onclick="viewDetails('Tulips Bouquet',300,'images/tulip.jpg','Elegant tulips for special moments')">
+        View Details
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 5 -->
+<div class="col-md-3 mb-4">
+  <div class="card">
+    <img src="images/peonies1.jpg" class="card-img-top" alt="Peonies bouquet">
+    <div class="card-body">
+      <h5 class="card-title">Peonies Bouquet</h5>
+      <p class="card-text">300 LE</p>
+      <button class="btn btn-primary-custom"
+        onclick="addToCart('Peonies Bouquet',300,'images/peonies1.jpg')">
+        Add to Cart
+      </button>
+      <button class="btn btn-outline-secondary btn-sm mt-2"
+        onclick="viewDetails('Peonies Bouquet',300,'images/peonies1.jpg','Soft and romantic peonies')">
+        View Details
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 6 -->
+<div class="col-md-3 mb-4">
+  <div class="card">
+    <img src="images/daisy boquet.jpg" class="card-img-top" alt="Daisies bouquet">
+    <div class="card-body">
+      <h5 class="card-title">Daisies Bouquet</h5>
+      <p class="card-text">300 LE</p>
+      <button class="btn btn-primary-custom"
+        onclick="addToCart('Daisies Bouquet',300,'images/daisy boquet.jpg')">
+        Add to Cart
+      </button>
+      <button class="btn btn-outline-secondary btn-sm mt-2"
+        onclick="viewDetails('Daisies Bouquet',300,'images/daisy boquet.jpg','Fresh white daisies')">
+        View Details
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 7 -->
+<div class="col-md-3 mb-4">
+  <div class="card">
+    <img src="images/orchide.jpg" class="card-img-top" alt="Orchids bouquet">
+    <div class="card-body">
+      <h5 class="card-title">Orchids Bouquet</h5>
+      <p class="card-text">300 LE</p>
+      <button class="btn btn-primary-custom"
+        onclick="addToCart('Orchids Bouquet',300,'images/orchide.jpg')">
+        Add to Cart
+      </button>
+      <button class="btn btn-outline-secondary btn-sm mt-2"
+        onclick="viewDetails('Orchids Bouquet',300,'images/orchide.jpg','Luxury orchid flowers')">
+        View Details
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 8 -->
+<div class="col-md-3 mb-4">
+  <div class="card">
+    <img src="images/lavender.jpg" class="card-img-top" alt="Lavender bouquet">
+    <div class="card-body">
+      <h5 class="card-title">Lavender Bouquet</h5>
+      <p class="card-text">300 LE</p>
+      <button class="btn btn-primary-custom"
+        onclick="addToCart('Lavender Bouquet',300,'images/lavender.jpg')">
+        Add to Cart
+      </button>
+      <button class="btn btn-outline-secondary btn-sm mt-2"
+        onclick="viewDetails('Lavender Bouquet',300,'images/lavender.jpg','Calming lavender scent')">
+        View Details
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 9 -->
+<div class="col-md-3 mb-4">
+  <div class="card">
+    <img src="images/Carnations Bouquet.jpg" class="card-img-top" alt="Carnations bouquet">
+    <div class="card-body">
+      <h5 class="card-title">Carnations Bouquet</h5>
+      <p class="card-text">300 LE</p>
+      <button class="btn btn-primary-custom"
+        onclick="addToCart('Carnations Bouquet',300,'images/Carnations Bouquet.jpg')">
+        Add to Cart
+      </button>
+      <button class="btn btn-outline-secondary btn-sm mt-2"
+        onclick="viewDetails('Carnations Bouquet',300,'images/Carnations Bouquet.jpg','Classic carnations bouquet')">
+        View Details
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 10 -->
+<div class="col-md-3 mb-4">
+  <div class="card">
+    <img src="images/Hydrangeas Bouquet.jpg" class="card-img-top" alt="Hydrangeas bouquet">
+    <div class="card-body">
+      <h5 class="card-title">Hydrangeas Bouquet</h5>
+      <p class="card-text">300 LE</p>
+      <button class="btn btn-primary-custom"
+        onclick="addToCart('Hydrangeas Bouquet',300,'images/Hydrangeas Bouquet.jpg')">
+        Add to Cart
+      </button>
+      <button class="btn btn-outline-secondary btn-sm mt-2"
+        onclick="viewDetails('Hydrangeas Bouquet',300,'images/Hydrangeas Bouquet.jpg','Elegant hydrangeas')">
+        View Details
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 11 -->
+<div class="col-md-3 mb-4">
+  <div class="card">
+    <img src="images/baby's breath.jpg" class="card-img-top" alt="Baby breath bouquet">
+    <div class="card-body">
+      <h5 class="card-title">Baby Breath Bouquet</h5>
+      <p class="card-text">100 LE</p>
+      <button class="btn btn-primary-custom"
+        onclick="addToCart('Baby Breath Bouquet', 100, 'images/baby&#39;s breath.jpg')">
+        Add to Cart
+      </button>
+      <button class="btn btn-outline-secondary btn-sm mt-2"
+        onclick="viewDetails('Baby Breath Bouquet', 100, 'images/baby&#39;s breath.jpg', 'Soft baby breath flowers')">
+        View Details
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3 mb-4">
+  <div class="card">
+    <img src="images/chrysanthemums.jpg" class="card-img-top" alt="Chrysanthemums bouquet">
+    <div class="card-body">
+      <h5 class="card-title">Chrysanthemums Bouquet</h5>
+      <p class="card-text">200 LE</p>
+      <button class="btn btn-primary-custom"
+        onclick="addToCart('Chrysanthemums Bouquet', 200, 'images/chrysanthemums.jpg')">
+        Add to Cart
+      </button>
+      <button class="btn btn-outline-secondary btn-sm mt-2"
+        onclick="viewDetails('Chrysanthemums Bouquet', 200, 'images/chrysanthemums.jpg', 'Fresh chrysanthemums')">
+        View Details
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 13 -->
+<div class="col-md-3 mb-4">
+  <div class="card">
+    <img src="images/iris flowers.jpg" class="card-img-top" alt="Irises bouquet">
+    <div class="card-body">
+      <h5 class="card-title">Irises Bouquet</h5>
+      <p class="card-text">300 LE</p>
+      <button class="btn btn-primary-custom"
+        onclick="addToCart('Irises Bouquet',300,'images/iris flowers.jpg')">
+        Add to Cart
+      </button>
+      <button class="btn btn-outline-secondary btn-sm mt-2"
+        onclick="viewDetails('Irises Bouquet',300,'images/iris flowers.jpg','Elegant irises')">
+        View Details
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 14 -->
+<div class="col-md-3 mb-4">
+  <div class="card">
+    <img src="images/pink ranunculus.jpg" class="card-img-top" alt="Pink ranunculus bouquet">
+    <div class="card-body">
+      <h5 class="card-title">Pink Ranunculus Bouquet</h5>
+      <p class="card-text">200 LE</p>
+      <button class="btn btn-primary-custom"
+        onclick="addToCart('Pink Ranunculus Bouquet',200,'images/pink ranunculus.jpg')">
+        Add to Cart
+      </button>
+      <button class="btn btn-outline-secondary btn-sm mt-2"
+        onclick="viewDetails('Pink Ranunculus Bouquet',200,'images/pink ranunculus.jpg','Soft pink ranunculus')">
+        View Details
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Product 15 -->
+<div class="col-md-3 mb-4">
+  <div class="card">
+    <img src="images/Gereberas.jpg" class="card-img-top" alt="Gerberas bouquet">
+    <div class="card-body">
+      <h5 class="card-title">Gereberas Bouquet</h5>
+      <p class="card-text">250 LE</p>
+      <button class="btn btn-primary-custom"
+        onclick="addToCart('Gereberas Bouquet',250,'images/Gereberas.jpg')">
+        Add to Cart
+      </button>
+      <button class="btn btn-outline-secondary btn-sm mt-2"
+        onclick="viewDetails('Gereberas Bouquet',250,'images/Gereberas.jpg','Colorful gerberas')">
+        View Details
+      </button>
+    </div>
+  </div>
+    </div>
+  </div>
+
+</section>
+
+</main>
+
+
+
+  <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p class="mb-0">&copy; 2025 FLORA. All rights reserved.</p>
+    </footer>
+
+
+
+<!-- Scripts Bootstrap & jQuery -->
+
+  <script src="bootstrap-4.0.0-dist/js/jquery-3.7.1.js"></script>
+  <script src="bootstrap-4.0.0-dist/js/popper.min.js"></script>
+  <script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+  <script src="bootstrap-4.0.0-dist/js/shop.js"></script>
+  
+</body>
+</html>

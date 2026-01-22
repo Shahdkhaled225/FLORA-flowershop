@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLORA - Premium Flower Shop</title>
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+<header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <div class="brand-icon">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 2c-1.5 2-3.5 3-5 3 0 4 2 7 5 8 3-1 5-4 5-8-1.5 0-3.5-1-5-3zM7 14c2 3 5 4 5 8 0-4 3-5 5-8-3 2-7 2-10 0z"/>
+                </svg>
+            </div>
+            <span class="namebrand">FLORA</span>
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto align-items-lg-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="occasionDropdown"
+                       role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Occasions
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="occasionDropdown">
+                        <a class="dropdown-item" href="occasion-birthday.html">Birthday</a>
+                        <a class="dropdown-item" href="occasion-anniversary.html">Anniversary</a>
+                        <a class="dropdown-item" href="occasion-get-well-soon.html">Get Well Soon</a>
+                        <a class="dropdown-item" href="occasion-congrats.html">Congratulations</a>
+                        <a class="dropdown-item" href="occasion-wedding.html">Wedding</a>
+                        <a class="dropdown-item" href="occasion-thank-you.html">Thank You</a>
+                        <a class="dropdown-item" href="occasion-iam-sorry.html">I am Sorry</a>
+                    </div>
+                </li>
+
+                <!-- Cart -->
+                <li class="nav-item">
+                    <a class="nav-link position-relative" href="cart.html">
+                        <i class="bi bi-cart3"></i>
+                        Cart
+                        <span class="badge badge-danger position-absolute">0</span>
+                    </a>
+                </li>
+
+                <!-- Login -->
+                <li class="nav-item ml-lg-3">
+                    <a class="btn btn-login" href="login.html">
+                        Log in
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- HERO SECTION -->
+    <section class="hero-section d-flex justify-content-center text-center">
+        <div class="hero-content container">
+            <p class="tagline mb-4"><i class="bi bi-flower1 mr-2"></i> Where Beauty Blooms Naturally</p>
+            <h1 class="main-heading">FLORA</h1>
+            <h2 class="sub-heading mb-4">Flowers that speak <span>louder than words</span></h2>
+            <p class="hero-description">
+                Experience the art of floral expression with FLORA. Each bouquet is meticulously crafted 
+                to convey emotions, celebrate moments, and create memories that last forever. 
+                From intimate gestures to grand celebrations, let our flowers tell your story.
+            </p>
+
+            <div class="d-flex flex-wrap justify-content-center gap-3 mb-4 btn-container">
+                <a href="shop.html" class="btn btn-secondary-custom">
+                    <i class="bi bi-cart3 mr-2"></i> Shop Now
+                </a>
+            </div>
+
+            <div class="scroll-indicator-container">
+                <a href="#bestSellers" class="scroll-indicator"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="container mt-5" id="bestSellers">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Our Best Sellers</h2>
+            <p class="text-muted">Discover our most popular flower arrangements</p>
+        </div>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="images/red roses.jpg" class="card-img-top" alt="Red Rose Bouquet">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Rose Bouquet</h5>
+                        <p class="card-text">400 LE</p>
+                        <a href="product-details.html" class="btn btn-view">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="images/mixedroses.jpg" class="card-img-top" alt="Mixed Flower Bouquet">
+                    <div class="card-body">
+                        <h5 class="card-title">Mixed Flower Bouquet</h5>
+                        <p class="card-text">350 LE</p>
+                        <a href="product-details.html" class="btn btn-view">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="images/tulip.jpg" class="card-img-top" alt="Tulip Bouquet">
+                    <div class="card-body">
+                        <h5 class="card-title">Tulip Bouquet</h5>
+                        <p class="card-text">300 LE</p>
+                        <a href="product-details.html" class="btn btn-view">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="images/lily.jpg" class="card-img-top" alt="Lily Bouquet">
+                    <div class="card-body">
+                        <h5 class="card-title">Lily Bouquet</h5>
+                        <p class="card-text">500 LE</p>
+                        <a href="product-details.html" class="btn btn-view">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="container mt-5 mb-5">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Why Choose FLORA?</h2>
+            <p class="text-muted">Your satisfaction is our priority. Here's why customers love us:</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                    <h5 class="feature-title">Freshness Guaranteed</h5>
+                    <p class="feature-text">We source our flowers from the best growers to ensure they arrive fresh and vibrant, lasting longer to brighten your special moments.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                    <h5 class="feature-title">Wide Selection</h5>
+                    <p class="feature-text">From classic roses to exotic blooms, we have a variety of arrangements for every occasion, taste, and budget.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="feature-card">
+                    <h5 class="feature-title">Fast Delivery</h5>
+                    <p class="feature-text">We offer same-day delivery options to ensure your flowers arrive fresh and on time, wherever you are.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- About -->
+            <div class="col-lg-12 col-md-12 mb-4 mb-md-0 text-center">
+                <h5 class="footer-title">FLORA</h5>
+                <p class="footer-text">
+                    Send your feeling with a bouquet... it arrives before words
+                </p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <!-- Quick Links -->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="footer-title">Quick Links</h5>
+                <ul class="footer-links list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#bestSellers">Best Sellers</a></li>
+                    <li><a href="shop.html">All Products</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="footer-title">Contact Us</h5>
+                <ul class="footer-contact list-unstyled">
+                    <li><i class="bi bi-envelope"></i> flora@gmail.com</li>
+                    <li><i class="bi bi-phone"></i> +123 456 7890</li>
+                    <li><i class="bi bi-geo-alt"></i> Cairo, Egypt</li>
+                </ul>
+            </div>
+
+            <!-- Social -->
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h5 class=
+                    "footer-title">Follow Us</h5>
+                <div class="footer-social">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts Bootstrap & jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="bootstrap-4.0.0-dist/js/shop.js"></script>
+
+</body>
+</html>
